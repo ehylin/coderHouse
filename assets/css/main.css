@@ -2,16 +2,24 @@ body{
     margin: 0;
     font-family: 'Lato', sans-serif;
 }
-.header{
-    background-color: #000;
-    color: #fff;
-}
 .header a{
     color: #fff;
 }
+.topLista, .navList{
+    margin: 0;
+}
+.top{
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+}
+.headerLogo{
+    text-align: center;
+}
 .nav{
+    background-color: #000;
+    color: #fff;
     text-align: right;
-    margin-right: 46px;
 }
 .subtitulos{
     text-align: center;
@@ -25,18 +33,23 @@ body{
 .homeImgPrincipal, .homeImgSecundarias{
     width: 50%;
 }
-.homeImgPrincipal{
+.homeImgPrincipal, .sobremiImg{
     float: left;
 }
-.homeImgSecundarias{
+.homeImgSecundarias, .sobreMiDescription{
     float: right;
 }
-
+.sobreMiDescription, .sobremiImg{
+    width: 50%;
+}
+.portafolioImg img, .blogImg img{
+    width: 33%;
+}
 .imgSecundarias{
     width: 38%;
 }
 
-.homeSobremi{
+.homeSobremi, .subtitulos{
     clear: both;
 }
 
