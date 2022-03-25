@@ -57,6 +57,7 @@ body{
     background-color: #c4a885;
     padding: 10px 0;
     color: #fff;
+    text-align: right;
 }
 
 .copyEhy{
@@ -67,4 +68,15 @@ body{
     text-align: center;
     padding: 10px;
     margin: 0;
+}
+.footer, .blogImg, .form{
+    clear: both;
+}
+.form{
+    width: 50%;
+    float: left;
+}
+.contactoDescription{
+    width: 50%;
+    float: right;
 }
