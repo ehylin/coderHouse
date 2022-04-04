@@ -1,6 +1,47 @@
 *{
     box-sizing: border-box;
 }
+body{
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+.topLista, .navList{
+    margin: 0;
+}
+.top{
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+}
+.topLista li, .navList li, .navFooterList li{
+    display: inline;
+}
+.header a{
+    color: #fff;
+}
+.headerLogo{
+    text-align: center;
+}
+.nav{
+    background-color: #000;
+    color: #fff;
+    text-align: right;
+}
+.navFooter{
+    background-color: #c4a885;
+    padding: 10px 0;
+    color: #fff;
+    text-align: right;
+}
+.copyEhy{
+    background-color: #000;
+}
+.copy{
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+}
 .container{
     width: 100%;
     margin-right: auto;
@@ -59,7 +100,7 @@
 .homeImg img{
     padding: 10px;
 }
-.homeImg img, .portafolio img, .blog img{
+.homeImg img{
     width: 100%;
 }
 .homeImgPrincipal, .homeImgSecundarias{
@@ -81,29 +122,31 @@
 .sobreMiDescription{
     padding: 10px;
 }
+.portafolioImg, .blogImg{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.portafolioImg img, .blogImg img{
+    width: 33%;
+}
+.blog{
+    margin-bottom: 30px;
+}
+.sobremiImg, .sobreMiDescription{
+    padding: 10px;
+}
+.displayNone{
+    display: none;
+}
+@media only screen and (min-width: 760px){
+    .displayNone{
+        display: block;
+    }
+}
 @media only screen and (min-width: 1400px){
     .container{
         max-width: 1320px;
     }
 }
-/* main {
-    margin: 0 auto;
-    max-width: 1000px;
-    min-height: 100vh;
-    display: grid;
-}
-.homeImg{
-    max-width: 800px;
-    padding: 1rem;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 200px 200px;
-    grid-template-rows: 200px 200px ;
-    grid-gap: 1rem;
-}
-.homeImg img{
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-} */
