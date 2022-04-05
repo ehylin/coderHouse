@@ -1,0 +1,155 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+.topLista, .navList{
+    margin: 0;
+}
+.top{
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+}
+.topLista li, .navList li, .navFooterList li{
+    display: inline;
+}
+.header a{
+    color: #fff;
+}
+.headerLogo{
+    text-align: center;
+}
+.nav{
+    background-color: #000;
+    color: #fff;
+    text-align: right;
+}
+.navFooter{
+    background-color: #c4a885;
+    padding: 10px 0;
+    color: #fff;
+    text-align: right;
+}
+.copyEhy{
+    background-color: #000;
+}
+.copy{
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+}
+.container{
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.grid{
+    display: grid;
+}
+.col-12{
+    grid-template-columns: repeat(1, 1fr);
+}
+.col-11{
+    grid-template-columns: repeat(11, 1fr);
+    
+}
+.col-10{
+    grid-template-columns: repeat(10, 1fr);
+    
+}
+.col-9{
+    grid-template-columns: repeat(9, 1fr);
+    
+}
+.col-8{
+    grid-template-columns: repeat(8, 1fr);
+    
+}
+.col-7{
+    grid-template-columns: repeat(7, 1fr);
+    
+}
+.col-6{
+    grid-template-columns: repeat(2, 1fr);
+    
+}
+.col-5{
+    grid-template-columns: repeat(2.5, 1fr);
+    
+}
+.col-4{
+    grid-template-columns: repeat(3, 1fr);
+    
+}
+.col-3{
+    grid-template-columns: repeat(4, 1fr);
+    
+}
+.col-2{
+    grid-template-columns: repeat(5, 1fr);
+    
+}
+.col-1{
+    grid-template-columns: repeat(12, 1fr);
+    
+}
+.homeImg img{
+    padding: 10px;
+}
+.homeImg img{
+    width: 100%;
+}
+.homeImgPrincipal, .homeImgSecundarias{
+    width: 50%;
+}
+.homeImgPrincipal{
+    float: left;
+}
+.homeImgSecundarias{
+    float: right;
+}
+.homeSobremi, .subtitulos{
+    clear: both;
+}
+.subtitulos{
+    text-align: center;
+    padding: 20px 0;
+}
+.sobreMiDescription{
+    padding: 10px;
+}
+.portafolioImg, .blogImg{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.portafolioImg img, .blogImg img{
+    width: 100%;
+}
+.blog{
+    margin-bottom: 30px;
+}
+.sobremiImg, .sobreMiDescription{
+    padding: 10px;
+}
+.displayNone{
+    display: none;
+}
+@media only screen and (min-width: 760px){
+    .displayNone{
+        display: block;
+    }
+    .portafolioImg img, .blogImg img{
+        width: 33%;
+    }
+}
+@media only screen and (min-width: 1400px){
+    .container{
+        max-width: 1320px;
+    }
+}
