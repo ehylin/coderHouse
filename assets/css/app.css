@@ -129,7 +129,7 @@ body{
     justify-content: center;
 }
 .portafolioImg img, .blogImg img{
-    width: 33%;
+    width: 100%;
 }
 .blog{
     margin-bottom: 30px;
@@ -143,6 +143,9 @@ body{
 @media only screen and (min-width: 760px){
     .displayNone{
         display: block;
+    }
+    .portafolioImg img, .blogImg img{
+        width: 33%;
     }
 }
 @media only screen and (min-width: 1400px){
