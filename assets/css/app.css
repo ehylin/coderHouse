@@ -141,7 +141,8 @@ body{
 .animacionHome {
     animation-duration: 3s;
     animation-name: slidein;
-    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
   }
   @keyframes slidein {
     from {
@@ -152,6 +153,34 @@ body{
     to {
       margin-left: 0%;
       width: 100%;
+    }
+  }
+
+
+  .headerLogo {
+
+    animation-name: my-animation;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+    animation-iteration-count: 2;
+    
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto; 
+  
+  }
+  
+  @keyframes my-animation {
+    from {
+     
+      width: 300px;
+      top: 10px;
+    }
+    to {
+  
+      width: 50px;
+      top: 100px;
     }
   }
 @media only screen and (min-width: 760px){
