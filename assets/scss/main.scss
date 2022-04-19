@@ -1,3 +1,8 @@
+$color-footer: #c4a885;
+$color-blanco: #fff;
+$color-negro: #000;
+
+
 *{
     box-sizing: border-box;
 }
@@ -15,27 +20,27 @@ body{
     display: inline;
 }
 .header a{
-    color: #fff;
+    color: $color-blanco;
 }
 .headerLogo{
     text-align: center;
 }
 .nav{
-    background-color: #000;
-    color: #fff;
+    background-color: $color-negro;
+    color: $color-blanco;
     text-align: right;
 }
 .navFooter{
-    background-color: #c4a885;
+    background-color: $color-footer;
     padding: 10px 0;
-    color: #fff;
+    color: $color-blanco;
     text-align: right;
 }
 .copyEhy{
-    background-color: #000;
+    background-color: $color-negro;
 }
 .copy{
-    color: #fff;
+    color: $color-blanco;
     text-align: center;
     padding: 10px;
     margin: 0;

@@ -1,92 +1,170 @@
-body{
-    margin: 0;
-    font-family: 'Lato', sans-serif;
-}
-.header a{
-    color: #fff;
-}
-.topLista, .navList{
-    margin: 0;
-}
-.top{
-    background-color: #000;
-    color: #fff;
-    margin: 0;
-}
-.headerLogo{
-    text-align: center;
-}
-.nav{
-    background-color: #000;
-    color: #fff;
-    text-align: right;
-}
+* {
+  box-sizing: border-box; }
 
+body {
+  margin: 0;
+  font-family: 'Lato', sans-serif; }
 
+.topLista, .navList {
+  margin: 0; }
 
-.subtitulos{
-    text-align: center;
-}
+.top {
+  margin: 0; }
 
-.topLista li, .navList li, .navFooterList li{
-    display: inline;
-}
+.topLista li, .navList li, .navFooterList li {
+  display: inline; }
 
+.header a {
+  color: #fff; }
 
-.homeImgPrincipal, .homeImgSecundarias{
-    width: 50%;
-}
-.homeImgPrincipal, .sobremiImg{
-    float: left;
-}
-.homeImgSecundarias, .sobreMiDescription{
-    float: right;
-}
-.sobreMiDescription, .sobremiImg{
-    width: 50%;
-}
-.portafolioImg img, .blogImg img{
-    width: 33%;
-}
-.imgSecundarias{
-    width: 38%;
-}
+.headerLogo {
+  text-align: center; }
 
-.homeSobremi, .subtitulos{
-    clear: both;
-}
+.nav {
+  background-color: #000;
+  color: #fff;
+  text-align: right; }
 
-.navFooter{
-    background-color: #c4a885;
-    padding: 10px 0;
-    color: #fff;
-    text-align: right;
-}
+.navFooter {
+  background-color: #c4a885;
+  padding: 10px 0;
+  color: #fff;
+  text-align: right; }
 
-.copyEhy{
-    background-color: #000;
-}
-.copy{
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    margin: 0;
-}
-.footer, .blogImg, .form{
-    clear: both;
-}
-.form{
-    width: 50%;
-    float: left;
-}
-.form, .contactoDescription{
-    margin-top: 40px;
-    margin-bottom: 40px;
-}
-.contactoDescription{
-    width: 50%;
-    float: right;
-}
-.main{
-    margin: 30px 0;
-}
+.copyEhy {
+  background-color: #000; }
+
+.copy {
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  margin: 0; }
+
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto; }
+
+.grid {
+  display: grid; }
+
+.col-12 {
+  grid-template-columns: repeat(1, 1fr); }
+
+.col-11 {
+  grid-template-columns: repeat(11, 1fr); }
+
+.col-10 {
+  grid-template-columns: repeat(10, 1fr); }
+
+.col-9 {
+  grid-template-columns: repeat(9, 1fr); }
+
+.col-8 {
+  grid-template-columns: repeat(8, 1fr); }
+
+.col-7 {
+  grid-template-columns: repeat(7, 1fr); }
+
+.col-6 {
+  grid-template-columns: repeat(2, 1fr); }
+
+.col-5 {
+  grid-template-columns: repeat(2.5, 1fr); }
+
+.col-4 {
+  grid-template-columns: repeat(3, 1fr); }
+
+.col-3 {
+  grid-template-columns: repeat(4, 1fr); }
+
+.col-2 {
+  grid-template-columns: repeat(5, 1fr); }
+
+.col-1 {
+  grid-template-columns: repeat(12, 1fr); }
+
+.homeImg img {
+  padding: 10px; }
+
+.homeImg img {
+  width: 100%; }
+
+.homeImgPrincipal, .homeImgSecundarias {
+  width: 50%; }
+
+.homeImgPrincipal {
+  float: left; }
+
+.homeImgSecundarias {
+  float: right; }
+
+.homeSobremi, .subtitulos {
+  clear: both; }
+
+.subtitulos {
+  text-align: center;
+  padding: 20px 0; }
+
+.sobreMiDescription {
+  padding: 10px; }
+
+.portafolioImg, .blogImg {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center; }
+
+.portafolioImg img, .blogImg img {
+  width: 100%; }
+
+.blog {
+  margin-bottom: 30px; }
+
+.sobremiImg, .sobreMiDescription {
+  padding: 10px; }
+
+.displayNone {
+  display: none; }
+
+.animacionHome {
+  animation-duration: 3s;
+  animation-name: slidein;
+  animation-duration: 2s;
+  animation-iteration-count: 1; }
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%; }
+  to {
+    margin-left: 0%;
+    width: 100%; } }
+
+.headerLogo {
+  animation-name: my-animation;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+  animation-duration: 2s;
+  animation-iteration-count: 2;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto; }
+
+@keyframes my-animation {
+  from {
+    width: 300px;
+    top: 10px; }
+  to {
+    width: 50px;
+    top: 100px; } }
+
+@media only screen and (min-width: 760px) {
+  .displayNone {
+    display: block; }
+  .portafolioImg img, .blogImg img {
+    width: 33%; } }
+
+@media only screen and (min-width: 1400px) {
+  .container {
+    max-width: 1320px; } }
