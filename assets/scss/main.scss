@@ -1,6 +1,12 @@
-$color-footer: #c4a885;
-$color-blanco: #fff;
-$color-negro: #000;
+// li{
+//     color: blue;
+//         &:hover{
+//             color: red;
+//         }
+// }
+
+@import "variables";
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
 
 
 *{
@@ -8,7 +14,7 @@ $color-negro: #000;
 }
 body{
     margin: 0;
-    font-family: 'Lato', sans-serif;
+    font-family: $fuente-principal;
 }
 .topLista, .navList{
     margin: 0;
@@ -188,16 +194,4 @@ body{
       top: 100px;
     }
   }
-@media only screen and (min-width: 760px){
-    .displayNone{
-        display: block;
-    }
-    .portafolioImg img, .blogImg img{
-        width: 33%;
-    }
-}
-@media only screen and (min-width: 1400px){
-    .container{
-        max-width: 1320px;
-    }
-}
+  @import "medias-queries";
